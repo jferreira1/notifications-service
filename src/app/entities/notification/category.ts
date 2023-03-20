@@ -6,7 +6,13 @@ export class Category {
   }
 
   private validateCategory(category: string) {
-    const validCategories = ['social', 'transaction', 'security', 'ads'];
+    const validCategories = [
+      'social',
+      'transaction',
+      'security',
+      'ads',
+      'test',
+    ];
     return validCategories.includes(category);
   }
 
