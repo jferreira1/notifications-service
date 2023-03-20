@@ -53,6 +53,10 @@ export class Notification {
     return (this.props.readAt = new Date());
   }
 
+  public unread(): Date | null {
+    return (this.props.readAt = null);
+  }
+
   public get readAt(): Date | null | undefined {
     return this.props.readAt;
   }
