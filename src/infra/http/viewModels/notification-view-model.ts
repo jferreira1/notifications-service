@@ -4,7 +4,7 @@ export class NotificationViewModel {
   static toHTTP(notification: Notification) {
     return {
       id: notification.id,
-      recipiendId: notification.recipientId,
+      recipientId: notification.recipientId,
       content: notification.content.value,
       category: notification.category.value,
       readAt: notification.readAt,
